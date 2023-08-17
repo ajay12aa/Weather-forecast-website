@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  animation: changeColors 20s infinite linear;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #68c3c0,
+    #f7a51a,
+    #ff3939,
+    #0c4868,
+    #68c3c0
+  );
+}
+
+@keyframes changeColors {
+  0%,
+  100% {
+    background-position: 0%;
+  }
+  25% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 200%;
+  }
+  75% {
+    background-position: 100%;
+  }
+}
+.body {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  background-color: white;
+  background: linear-gradient(to bottom right, #68c3c0, #194258);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search input {
+  width: 250px;
+  height: 50px;
+  padding-left: 10px;
+
+  border-radius: 30px;
+  background-color: antiquewhite;
+  border: none;
+}
+
+.search button img {
+  height: 15px;
+  width: 20px;
+  border-radius: 50px;
+}
+
+.search button {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: antiquewhite;
+}
+
+@media (max-width: 875px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+.address h1 {
+  font-size: 65px;
+  margin-top: 10px;
+}
+.address h2 {
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.others {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.others .col1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.others .col2 {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+@media (max-width: 875px) {
+  .body {
+    height: 120vh;
+  }
+
+  .container {
+    height: 120vh;
+  }
+
+  .others {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .col2 {
+    margin-top: 50px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/* .address {
+  visibility: hidden;
+}
+
+.others {
+  visibility: hidden;
+} */
